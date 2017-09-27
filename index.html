@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Formularz JK </title>
 </head>
+
 <body>
-    <p>Moje portfolio</p>
+    <form>
+       <form action="https://formspree.io/kulawska.justyna@mail.com"
+      method="POST">
+        <label>Imie </label>
+        <input name="name" placeholder="Justyna"><br>
+
+        <label>Nazwisko</label>
+        <input name="surname" placeholder="Kulawska"><br>
+
+        <label>Email</label>
+        <input name="email" type="email" placeholder="lalala@o2.pl"><br>
+
+
+        <label>
+        <input type="number">Numer telefonu</label><br>
+    </form>
+
+
+    <!-- Pole wyboru miasta -->
+    <p> <label>Wybierz miasto:</label>
+        <select name="Miasto">
+	<option selected="selected">Kraków</option>
+	<option>Warszawa</option>
+	<option>Gdańsk</option>
+      </select></p>
+
+    <!-- Pole typu RADIO-płeć -->
+    <p> <label>Podaj swoją płeć:</label>
+        <input type="radio" name="Płeć" value="Kobieta" />Kobieta
+        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+    </p>
+
+    <!-- Pole z duzym oknem tekstowym -->
+  <p> 
+    <textarea name="textarea" rows="10" cols="50">Wiadomosc</textarea>
+
+    <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
+    <p><input type="checkbox" required name="terms"> Wyrażam zgodę na przetwarzanie <u>danych osobowych</u></p>
+    <p><input type="submit"></p>
     
 </body>
+
 </html>
