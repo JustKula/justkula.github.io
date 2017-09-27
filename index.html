@@ -7,9 +7,8 @@
 </head>
 
 <body>
-    <form>
-       <form action="https://formspree.io/kulawska.justyna@mail.com"
-      method="POST">
+
+    <form action="https://formspree.io/kulawska.justyna@mail.com" method="POST">
         <label>Imie </label>
         <input name="name" placeholder="Justyna"><br>
 
@@ -22,31 +21,31 @@
 
         <label>
         <input type="number">Numer telefonu</label><br>
-    </form>
 
 
-    <!-- Pole wyboru miasta -->
-    <p> <label>Wybierz miasto:</label>
-        <select name="Miasto">
+        <!-- Pole wyboru miasta -->
+        <p> <label>Wybierz miasto:</label>
+            <select name="Miasto">
 	<option selected="selected">Kraków</option>
 	<option>Warszawa</option>
 	<option>Gdańsk</option>
       </select></p>
 
-    <!-- Pole typu RADIO-płeć -->
-    <p> <label>Podaj swoją płeć:</label>
-        <input type="radio" name="Płeć" value="Kobieta" />Kobieta
-        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
-    </p>
+        <!-- Pole typu RADIO-płeć -->
+        <p> <label>Podaj swoją płeć:</label>
+            <input type="radio" name="Płeć" value="Kobieta" />Kobieta
+            <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+        </p>
 
-    <!-- Pole z duzym oknem tekstowym -->
-  <p> 
-    <textarea name="textarea" rows="10" cols="50">Wiadomosc</textarea>
+        <!-- Pole z duzym oknem tekstowym -->
+        <p>
+            <textarea name="textarea" rows="10" cols="50">Wiadomosc</textarea>
 
-    <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
-    <p><input type="checkbox" required name="terms"> Wyrażam zgodę na przetwarzanie <u>danych osobowych</u></p>
-    <p><input type="submit"></p>
-    
+            <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
+            <p><input type="checkbox" required name="terms"> Wyrażam zgodę na przetwarzanie <u>danych osobowych</u></p>
+            <p><input type="submit"></p>
+    </form>
+
 </body>
 
 </html>
