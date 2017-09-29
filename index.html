@@ -3,52 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz JK </title>
+    <title>Document</title>
 </head>
 
 <body>
+    <form action="">
 
-    <form action="https://formspree.io/kulawska.justyna@gmail.com" method="POST">
-        <label>Imie: </label>
-        <input name="name" placeholder="Justyna"><br>
+<!-- Informacje podstawowe -->
+        <label for="name" placeholder="Justyna">Imie </label>
+        <input type="text " name="name ">
+        <label for="surnmame" placeholder="Kulawska"> Nazwisko</label>
+        <input type="text " name="surname ">
+        <label for="email" placeholder="lalala@o2.pl">Email</label>
+        <input type="email" name="email ">
+        <label for="phone">Numer telefonu</label>
+        <input type="number " name= "phone">
 
-        <label>Nazwisko: </label>
-        <input name="surname" placeholder="Kulawska"><br>
+<!-- Pole wyboru miasta -->
+    <p><label for ="city">Wybierz swoje miasto: </label>
+        <select name="Miasto">
+	    <option selected="selected">Kraków</option>
+	    <option>Warszawa</option>
+	    <option>Gdańsk</option>
+        </select>
+    </p> 
+        
+ <!-- Pole wyboru płci -->       
+    <p> Zaznacz jedną opcję z poniższych:
+        <label for="male">Mężczyza</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">Kobieta</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        <label for="other">Ono</label>
+        <input type="radio" name="gender" id="other" value="other"><br><br>
+    </p>
+<!-- Pole z duzym oknem tekstowym -->
+    <p> <textarea name="textarea" rows="10" cols="50"> Wiadomość dodatkowa: </textarea></p>
 
-        <label>Email: </label>
-        <input name="email" type="email" placeholder="lalala@o2.pl"><br>
+<!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
+    <p><input type="checkbox" required name="terms"> <u>Wyrażam zgodę na przetwarzanie  moich danych osobowych</u></p>
 
-
-        <label>Numer telefonu: </label>
-        <input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)'>  <br>
-
-        <!-- Pole wyboru miasta -->
-        <p> <label>Wybierz swoje miasto: </label>
-            <select name="Miasto">
-	<option selected="selected">Kraków</option>
-	<option>Warszawa</option>
-	<option>Gdańsk</option>
-            </select>
-        </p>
-
-        <!-- Pole typu RADIO-płeć -->
-        <p> <label>Podaj swoją płeć: </label>
-            <input type="radio" name="Płeć" value="Kobieta" />Kobieta
-            <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
-        </p>
-
-        <!-- Pole z duzym oknem tekstowym -->
-        <p><textarea name="textarea" rows="10" cols="50">Wiadomość dodatkowa: </textarea>
-
-            <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
-            <p><input type="checkbox" required name="terms"> <u>Wyrażam zgodę na przetwarzanie  moich danych osobowych</u></p>
-
-            <p>
-                <button type="submit">Wyślij</button>
-
-            </p>
-    </form>
-
+<!--Przycisk-->   
+    <p><button type="submit">Wyślij</button></p>
+                                                                     
+    </form>                                                
+                                                    
 </body>
-
 </html>
