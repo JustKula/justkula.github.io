@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz JK </title>
+    <title>Document</title>
 </head>
 
 <body>
+<<<<<<< HEAD
 
     <form action="https://formspree.io/kulawska.justyna@gmail.com" method="POST">
         <label>Imie: </label>
@@ -22,33 +23,46 @@
         <label>Numer telefonu: </label>
         <input type="text" class="input-medium bfh-phone" data-format="+1'48 (ddd) ddd-ddd"><span class="bfh-phone" data-format="+48 (ddd) ddd-ddd" data-number="4855555555"></span>
 
+=======
+    <form action="form">
+        <!-- Informacje podstawowe -->
+        <label for="name">Imie </label>
+        <input type="text" id="name" name="name">
+        <label for="surname"> Nazwisko</label>
+        <input type="text" id="surname" name="surname">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="telephone">Telefon:</label>
+        <input type="tel" id="telephone" name="telephone">
+>>>>>>> f18d2d59e0c42d27e9ff91d85f861b2790e08a66
         <!-- Pole wyboru miasta -->
-        <p> <label>Wybierz swoje miasto: </label>
-            <select name="Miasto">
-	<option selected="selected">Kraków</option>
-	<option>Warszawa</option>
-	<option>Gdańsk</option>
+        <p>
+            <label for="city">Wybierz swoje miasto: </label>
+            <select name="city" id="city" name="city">
+                <option selected="selected">Kraków</option>
+                <option>Warszawa</option>
+                <option>Gdańsk</option>
             </select>
         </p>
-
-        <!-- Pole typu RADIO-płeć -->
-        <p> <label>Podaj swoją płeć: </label>
-            <input type="radio" name="Płeć" value="Kobieta" />Kobieta
-            <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+        <!-- Pole wyboru płci -->
+        <p> Zaznacz swoja plec:
+            <label for="man">
+                <input type="radio" id="man" name="man"> Mężczyzna</label>
+            <label for="woman">
+                <input type="radio" id="woman" name="man">Kobieta</label>
         </p>
-
         <!-- Pole z duzym oknem tekstowym -->
-        <p><textarea name="textarea" rows="10" cols="50">Wiadomość dodatkowa: </textarea>
-
-            <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
-            <p><input type="checkbox" required name="terms"> <u>Wyrażam zgodę na przetwarzanie  moich danych osobowych</u></p>
-
-            <p>
-                <button type="submit">Wyślij</button>
-
-            </p>
+        <p>
+            <textarea name="textarea" rows="10" cols="50"> Wiadomość dodatkowa: </textarea>
+        </p>
+        <!-- Pole o zgodzie na przetwarzaniu danych osobowych -->
+        <p>
+            <input type="checkbox" required name="terms"> <u>Wyrażam zgodę na przetwarzanie  moich danych osobowych</u></p>
+        <!--Przycisk-->
+        <p>
+            <button type="submit">Wyślij</button>
+        </p>
     </form>
-
 </body>
 
 </html>
