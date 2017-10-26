@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+	display: block;
+	#product-item {
+		width: 100%;
+	}
+	
+	.product_id{
+		width: 100%;
+	}
+	
+}
+
+/*Medium and small devices media queries*/
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+	display: inline-block;
+	figure {
+		width: 49%;
+	}
+
+}
+
+
+/*Large devices media queries*/
+@media screen and (min-width: 993px) {
+	#gallery {
+		width: 90%;
+	}
+}

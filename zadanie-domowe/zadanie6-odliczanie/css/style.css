@@ -1,0 +1,95 @@
+* {
+    background-color: #000;
+    color: #fff;
+/*    -webkit-margin-before: 0em;*/
+/*    -webkit-margin-after: 0em;*/
+}
+
+.odliczanie {
+    
+    width: 50%;
+    font-size: 10em;
+    font-weight: 100;
+    height: 50vh;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 25%;ą
+    position: relative;
+}
+
+.odliczanie-lp {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#dziesiec, #dziewiec, #osiem,
+#siedem, #szesc, #piec, #cztery,
+#trzy, #dwa, #jeden,
+#tekst {
+    visibility: hidden;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+#dziewiec {
+    animation-delay: 1s;
+}
+
+#osiem {
+    animation-delay: 2s;
+}
+
+#siedem {
+    animation-delay: 3s;
+}
+
+#szesc {
+    animation-delay: 4s;
+}
+
+#piec {
+    animation-delay: 5s;
+}
+
+#cztery {
+    animation-delay: 6s;
+}
+
+#trzy {
+    animation-delay: 7s;
+}
+
+#dwa {
+    animation-delay: 8s;
+}
+
+#jeden {
+    animation-delay: 9s;
+}
+
+#tekst {
+    animation-delay: 10s;
+    font-size: 70px;
+}
+
+@keyframes fadeIn {
+    0% {
+        visibility: hidden;
+    }
+    99% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
