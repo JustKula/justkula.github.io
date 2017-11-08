@@ -3,45 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz </title>
+    <title>formularz</title>
 </head>
 
 <body>
     <form action="https://formspree.io/bundushathurh@gmail.com" method="POST">
-        <label for="imie">Imię:</label>
-        <br>
+        <label for="imie">Imię:</label><br>
         <input type="text" name="imie" id="imie">
         <br>
-        <label for="nazwisko">Nazwisko:</label>
-        <br>
+        <label for="nazwisko">Nazwisko:</label><br>
         <input type="text" name="nazwisko" id="nazwisko">
         <br>
-        <label for="email">Email:</label>
-        <br>
+        <label for="email">Email:</label><br>
         <input type="email" name="_replyto" id="email">
         <br>
-        <label for="numer">Numer telefonu:</label>
-        <br>
+        <label for="numer">Numer telefonu:</label><br>
         <input type="text" name="numer" id="numer">
         <br>
-        <br>
-        Wybierz miasto:
+        <br> Wybierz miasto:
         <select>
-      <option value="krakow">Kraków</option>
-      <option value="warszawa">Warszawa</option>
-      <option value="gdansk">Gdańsk</option>  
-    </select>
+          <option value="krakow">Kraków</option>
+          <option value="warszawa">Warszawa</option>
+          <option value="gdansk">Gdańsk</option>  
+        </select>
         <br>
         <br> Wybierz płeć:<br>
-        <input type="radio" name="gender" value="male"> Mężczyzna<br>
-        <input type="radio" name="gender" value="female"> Kobieta<br>
+        <label for="male">Mezczyzna</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">Kobieta</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        <br>
         <br>
         <input type="checkbox" name="zgoda" value="zgoda">Zgoda na przetwarzanie danych osobowych<br>
-
         <br>
         <label for="tekst">Wiadomość:</label>
         <br>
-        <textarea name="tekst" id="tekst" style="width:250px;height:75px;" ></textarea>
+        <textarea name="tekst" id="tekst" style="width:250px;height:75px;"></textarea>
         <br>
         <input type="submit" value="Wyślij">
     </form>
